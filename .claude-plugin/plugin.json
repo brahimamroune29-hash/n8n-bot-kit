@@ -1,0 +1,12 @@
+{
+  "name": "n8n-bot-kit",
+  "version": "1.0.0",
+  "description": "شات بوت لواتساب وإنستغرام وماسنجر وأتمتة بحرّاس، يبنيها Claude داخل n8n عبر خادم الربط الرسمي.",
+  "author": {
+    "name": "Brahim Amro",
+    "url": "https://github.com/brahimamroune29-hash"
+  },
+  "repository": "https://github.com/brahimamroune29-hash/n8n-bot-kit",
+  "license": "MIT",
+  "keywords": ["n8n", "chatbot", "whatsapp", "automation", "arabic", "mcp"]
+}
