@@ -1,6 +1,6 @@
 {
   "name": "n8n-bot-kit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "شات بوت لواتساب وإنستغرام وماسنجر وأتمتة بحرّاس، يبنيها Claude داخل n8n عبر خادم الربط الرسمي.",
   "author": {
     "name": "Brahim Amro",
