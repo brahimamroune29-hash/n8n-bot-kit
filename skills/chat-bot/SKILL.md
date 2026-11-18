@@ -5,7 +5,7 @@ description: Build a customer chat bot inside n8n through n8n's built-in MCP ser
 
 # Chat bot in n8n
 
-Everything is built in the user's n8n through the n8n MCP tools (`create_data_table`, `validate_workflow`, `create_workflow_from_code`, `publish_workflow`…). If those tools are missing, the MCP server is not connected: give the user the steps in [references/setup.md](references/setup.md#1-connect-n8n-to-claude) and stop.
+Everything is built in the user's n8n through the n8n MCP tools (`create_data_table`, `validate_workflow`, `create_workflow_from_code`, `publish_workflow`…). If those tools are missing, the MCP server is not connected: give the user the steps in [references/setup.md](references/setup.md#1-connect-n8n-to-claude) and stop. When the user wants no MCP connection, `node $SKILL_DIR/build-bot.mjs <client-folder>` does steps 2 to 4 through n8n's public API from two files in that folder, `.env` and `bot.json` (described at the top of the script). On that path only, the keys live in `.env`: the user fills it by hand, never in chat, and keeps it out of git. It needs n8n installed on this machine (`npm install -g n8n`), checks every workflow with the SDK's `validateWorkflow`, and creates the credential of a channel the client does not use holding `not-used`. Publishing and the later steps are then done by hand in n8n.
 
 `SKILL_DIR` below = the "Base directory for this skill" path.
 
